@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="main.backend.Home"
+            prefHeight="700.0" prefWidth="800.0"
+            style="-fx-background-color: #0282e5">
+
+
+    <Pane layoutX="150" layoutY="150">
+        <VBox spacing="50">
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Reaction Time"
+                        onAction="#reactionTimeClicked"/>
+                <Button text="Aim Trainer"
+                        onAction="#aimTrainerClicked"/>
+                <Button text="Chimp Test"
+                        onAction="#chimpTestClicked"/>
+                <Button text="Visual Memory"
+                        onAction="#visualMemoryClicked"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Number Memory"
+                        onAction="#numberMemoryClicked"/>
+                <Button text="Typing"
+                        onAction="#typingClicked"/>
+                <Button text="Verbal Memory"
+                        onAction="#verbalMemoryClicked"/>
+                <Button text="My Game"
+                        onAction="#myGameClicked"/>
+            </HBox>
+        </VBox>
+    </Pane>
+</Pane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<?import javafx.scene.text.Font?>
+<Pane fx:id="root"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.AimTrainer"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #0282e5">
+
+    <Button text="Home"
+            onAction="#homeClicked"/>
+
+    <VBox layoutX="150" layoutY="100" spacing="10"
+            prefHeight="300.0" prefWidth="500.0">
+        <Button fx:id="button"
+                text="Click To Begin"
+                alignment="CENTER"
+                onAction="#start"/>
+        <Label fx:id="label" visible="false" textFill="white">
+            <font>
+                <Font name="Arial-Black" size="25"/>
+            </font>
+        </Label>
+        <Label fx:id="remaining" textFill="white">
+            <font>
+                <Font name="Arial-Black" size="25"/>
+            </font>
+        </Label>
+        <Pane>
+            <Circle radius="30"
+                    fill="grey" fx:id="target"
+                    visible="false"/>
+        </Pane>
+    </VBox>
+</Pane>
+
+
+

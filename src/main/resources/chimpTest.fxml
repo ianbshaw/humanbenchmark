@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.ChimpTest"
+      prefHeight="600.0" prefWidth="600.0"
+      style="-fx-background-color: #0282e5">
+
+    <Button text="Home"
+            onAction="#homeClicked"/>
+
+    <VBox layoutX="250" layoutY="5">
+        <Button text="Click to begin"
+                alignment="CENTER"
+                onAction="#start"/>
+        <HBox>
+            <Label text="Lives remaining: " textFill="white">
+                    <font>
+                        <Font name="Arial-Black" size="25"/>
+                    </font>
+            </Label>
+            <Label fx:id="lives" textFill="white">
+                    <font>
+                        <Font name="Arial-Black" size="25"/>
+                    </font>
+            </Label>
+            <Label text="   Score: " textFill="white">
+                    <font>
+                        <Font name="Arial-Black" size="25"/>
+                    </font>
+            </Label>
+            <Label fx:id="score" textFill="white">
+                    <font>
+                        <Font name="Arial-Black" size="25"/>
+                    </font>
+            </Label>
+        </HBox>
+    </VBox>
+
+    <BorderPane layoutX="150" layoutY="100"
+                maxHeight="100" maxWidth="100">
+        <left>
+            <GridPane fx:id="grid"
+                          hgap="10" vgap="10"
+                          alignment="CENTER_LEFT"
+                          maxHeight="100" maxWidth="100">
+            </GridPane>
+        </left>
+
+    </BorderPane>
+</Pane>

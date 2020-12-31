@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<?import javafx.scene.control.TextArea?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.Typing"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #0282e5">
+
+    <Button text="Home"
+            onAction="#homeClicked"/>
+
+    <Pane layoutX="100" layoutY="10">
+        <VBox spacing="10">
+            <Label text="Typing Test" textFill="white">
+                <font>
+                    <Font name="Arial-Black" size="35"/>
+                </font>
+            </Label>
+            <Label text="How long will it take you to type this passage?" textFill="white">
+                <font>
+                    <Font name="Arial-Black" size="15"/>
+                </font>
+            </Label>
+            <TextFlow fx:id="textFlow" prefWidth="550"/>
+            <TextArea fx:id="typeTest" wrapText="true"/>
+            <HBox>
+                <Label text="Score: " textFill="white">
+                    <font>
+                        <Font name="Arial-Black" size="25"/>
+                    </font>
+                </Label>
+                <Label fx:id="finalScore" textFill="white">
+                    <font>
+                        <Font name="Arial-Black" size="25"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </Pane>
+
+
+
+</Pane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<Pane fx:id="pane"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.MyGame"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #0282e5">
+
+    <Button text="Home"
+            onAction="#homeClicked"/>
+
+    <VBox layoutX="100" layoutY="150" alignment="CENTER">
+        <Label fx:id="label"
+               text="Click to start" textFill="white">
+            <font>
+                <Font name="Arial-Black" size="45"/>
+            </font>
+        </Label>
+        <Button fx:id="button"
+                text="Restart"
+                visible="false"
+                onAction="#restart"/>
+    </VBox>
+
+</Pane>
